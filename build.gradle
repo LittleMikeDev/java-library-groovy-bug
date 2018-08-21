@@ -1,0 +1,14 @@
+defaultTasks 'build'
+
+subprojects {
+    apply plugin: 'groovy'
+    apply plugin: 'java-library'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        implementation 'org.codehaus.groovy:groovy-all:2.5.2'
+    }
+}
